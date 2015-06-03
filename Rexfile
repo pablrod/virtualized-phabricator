@@ -107,14 +107,14 @@ task 'PrepararMaquinaVirtual', sub {
 
 task 'AliasLocal', sub {
     
-    host_entry 'phabricator.pablo-rodriguez.intranet.meteologica.com',
+    host_entry 'phabricator.example.org',
         ensure    => 'present',
         ip        => '127.0.0.1';
 };
 
 task 'EliminarAliasLocal', sub {
     
-    host_entry 'phabricator.pablo-rodriguez.intranet.meteologica.com',
+    host_entry 'phabricator.example.org',
         ensure    => 'absent',
         ip        => '127.0.0.1';
 };
