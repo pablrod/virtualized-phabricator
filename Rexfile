@@ -4,7 +4,7 @@ use Rex::Commands::Host;
 desc 'Instala los paquetes necesarios';
 task 'InstalarPaquetes', sub {
     my @paquetes = qw(
-        httpd git php php-cli php-mysql php-process php-devel php-gd php-pecl-apc php-pecl-json php-mbstring mariadb-server mariadb
+        httpd git php php-cli php-mysql php-process php-devel php-gd php-pecl-apc php-pecl-json php-mbstring mariadb-server mariadb subversion
         );
     pkg \@paquetes, 
             ensure => 'present';
